@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash API
+    </title>
+    <script defer src="http://192.168.1.167:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <h1>MediaWall</h1>
+    <div id="overlay">
+        <div class="button" onclick="host()">
+            <p>HOST</p>
+        </div>
+        <div class="button" onclick="client()">
+            <p>CLIENT</p>
+        </div>
+    </div>
+    <form class="form" id="send-container" autocomplete="off">
+        <input type="text" id="message-input">
+        <button class="button" type="submit" id="send-button">Send</button>
+    </form>
+</body>
+
+</html>
